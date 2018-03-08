@@ -5047,3 +5047,475 @@ com.westlife.demo.common.GeneralException: 5001 : 身份证格式错误!!!,必�
 2018-03-08 14:27:46.779  INFO 18072 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
 2018-03-08 14:27:46.811  INFO 18072 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 31 ms
 2018-03-08 14:29:01.248  INFO 18072 --- [http-nio-8081-exec-7] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2018-03-08 15:01:52.568 ERROR 26588 --- [main] o.s.b.l.LoggingApplicationListener       : Cannot set level: DEBUG   for 'org.springframework.web'
+2018-03-08 15:01:52.575 ERROR 26588 --- [main] o.s.b.l.LoggingApplicationListener       : Cannot set level: INFO   for 'null'
+2018-03-08 15:01:52.803  INFO 26588 --- [main] com.westlife.demo.Application            : Starting Application on LAPTOP-NQRD58OA with PID 26588 (started by 28953 in F:\ IDcard\idCard)
+2018-03-08 15:01:52.806  INFO 26588 --- [main] com.westlife.demo.Application            : No active profile set, falling back to default profiles: default
+2018-03-08 15:01:52.979  INFO 26588 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1198b989: startup date [Thu Mar 08 15:01:52 CST 2018]; root of context hierarchy
+2018-03-08 15:01:55.826  INFO 26588 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-03-08 15:01:57.137  INFO 26588 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration' of type [class org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-03-08 15:01:57.472  INFO 26588 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'validator' of type [class org.springframework.validation.beanvalidation.LocalValidatorFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-03-08 15:01:57.807  INFO 26588 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$1216563d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-03-08 15:01:58.280  INFO 26588 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'redisConfig' of type [class com.westlife.demo.service.RedisConfig$$EnhancerBySpringCGLIB$$df88c8f1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-03-08 15:01:58.371  INFO 26588 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'keyGenerator' of type [class com.westlife.demo.service.RedisConfig$1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-03-08 15:01:58.376  INFO 26588 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cache.annotation.ProxyCachingConfiguration' of type [class org.springframework.cache.annotation.ProxyCachingConfiguration$$EnhancerBySpringCGLIB$$5b288c5b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-03-08 15:01:59.816  INFO 26588 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8081 (http)
+2018-03-08 15:01:59.876  INFO 26588 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-03-08 15:01:59.879  INFO 26588 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.24
+2018-03-08 15:02:01.069  INFO 26588 --- [localhost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2018-03-08 15:02:01.083  INFO 26588 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-03-08 15:02:01.083  INFO 26588 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 8108 ms
+2018-03-08 15:02:01.789  INFO 26588 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-03-08 15:02:01.803  INFO 26588 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'errorPageFilter' to: [/*]
+2018-03-08 15:02:01.805  INFO 26588 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-03-08 15:02:01.808  INFO 26588 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-03-08 15:02:01.815  INFO 26588 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-03-08 15:02:01.816  INFO 26588 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-03-08 15:02:06.406  INFO 26588 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/queryIDCrad],methods=[POST]}" onto public com.westlife.demo.model.IDCard com.westlife.demo.controller.IDCardController.queryIDCrad(com.westlife.demo.common.RequestDto,org.springframework.validation.BindingResult) throws com.westlife.demo.common.GeneralException,java.text.ParseException
+2018-03-08 15:02:06.407  INFO 26588 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/v2/api-docs],methods=[GET]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String)
+2018-03-08 15:02:06.420  INFO 26588 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2018-03-08 15:02:06.422  INFO 26588 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2018-03-08 15:02:06.424  INFO 26588 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2018-03-08 15:02:06.438  INFO 26588 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-08 15:02:06.439  INFO 26588 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-08 15:02:07.891  INFO 26588 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1198b989: startup date [Thu Mar 08 15:01:52 CST 2018]; root of context hierarchy
+2018-03-08 15:02:08.106  INFO 26588 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-08 15:02:08.106  INFO 26588 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-08 15:02:08.273  INFO 26588 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-08 15:02:09.772  INFO 26588 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-03-08 15:02:09.775  INFO 26588 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'readDataSource' has been autodetected for JMX exposure
+2018-03-08 15:02:09.800  INFO 26588 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'readDataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=readDataSource,type=DruidDataSource]
+2018-03-08 15:02:09.841  INFO 26588 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2018-03-08 15:02:09.937  INFO 26588 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found {0} custom documentation plugin(s)
+2018-03-08 15:02:09.970  INFO 26588 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2018-03-08 15:02:09.993  INFO 26588 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method queryIDCrad was 根据查询身份证号查询身份信息swagger
+2018-03-08 15:02:10.003  INFO 26588 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: queryIDCrad belongs to groups: [[ResourceGroup{groupName='根据查询身份证号查询身份信息swagger', position=0, controller=com.westlife.demo.controller.IDCardController}]] 
+2018-03-08 15:02:10.011  INFO 26588 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Created resource listing Path: /default/根据查询身份证号查询身份信息swagger Description: 根据查询身份证号查询身份信息swagger Position: 0
+2018-03-08 15:02:10.099  INFO 26588 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: com.westlife.demo.common.RequestDto(false)
+2018-03-08 15:02:10.099  INFO 26588 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key com.westlife.demo.common.RequestDto(false)
+2018-03-08 15:02:10.128  INFO 26588 --- [main] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: com.westlife.demo.common.RequestDto(false)
+2018-03-08 15:02:10.129  INFO 26588 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key com.westlife.demo.common.RequestDto(false)
+2018-03-08 15:02:10.238  INFO 26588 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: com.westlife.demo.common.RequestDto(false)
+2018-03-08 15:02:10.239  INFO 26588 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key com.westlife.demo.common.RequestDto(false)
+2018-03-08 15:02:10.257  INFO 26588 --- [main] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: com.westlife.demo.common.RequestDto(false)
+2018-03-08 15:02:10.263  INFO 26588 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key com.westlife.demo.common.RequestDto(false)
+2018-03-08 15:02:10.271  INFO 26588 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: com.westlife.demo.model.IDCard(true)
+2018-03-08 15:02:10.271  INFO 26588 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key com.westlife.demo.model.IDCard(true)
+2018-03-08 15:02:10.273  INFO 26588 --- [main] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: com.westlife.demo.model.IDCard(true)
+2018-03-08 15:02:10.273  INFO 26588 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key com.westlife.demo.model.IDCard(true)
+2018-03-08 15:02:10.310  INFO 26588 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: com.westlife.demo.model.IDCard(true)
+2018-03-08 15:02:10.311  INFO 26588 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key com.westlife.demo.model.IDCard(true)
+2018-03-08 15:02:10.311  INFO 26588 --- [main] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: com.westlife.demo.model.IDCard(true)
+2018-03-08 15:02:10.311  INFO 26588 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key com.westlife.demo.model.IDCard(true)
+2018-03-08 15:02:10.316  INFO 26588 --- [main] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /queryIDCrad.com.westlife.demo.controller.IDCardController.queryIDCrad.DefaultGenericTypeNamingStrategy
+2018-03-08 15:02:10.318  INFO 26588 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /queryIDCrad.com.westlife.demo.controller.IDCardController.queryIDCrad.DefaultGenericTypeNamingStrategy
+2018-03-08 15:02:10.373  INFO 26588 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method queryIDCrad was 根据查询身份证号查询身份信息swagger
+2018-03-08 15:02:10.429  INFO 26588 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method queryIDCrad was 根据查询身份证号查询身份信息swagger
+2018-03-08 15:02:10.662  INFO 26588 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8081 (http)
+2018-03-08 15:02:10.672  INFO 26588 --- [main] com.westlife.demo.Application            : Started Application in 18.756 seconds (JVM running for 19.766)
+2018-03-08 15:02:10.672  INFO 26588 --- [main] com.westlife.demo.Application            : SpringBoot加载完毕
+2018-03-08 15:02:25.901  INFO 26588 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-03-08 15:02:25.902  INFO 26588 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-03-08 15:02:25.943  INFO 26588 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 41 ms
+2018-03-08 15:03:08.326 ERROR 1972 --- [main] o.s.b.l.LoggingApplicationListener       : Cannot set level: DEBUG   for 'org.springframework.web'
+2018-03-08 15:03:08.338 ERROR 1972 --- [main] o.s.b.l.LoggingApplicationListener       : Cannot set level: INFO   for 'null'
+2018-03-08 15:03:08.432  INFO 1972 --- [main] com.westlife.demo.Application            : Starting Application on LAPTOP-NQRD58OA with PID 1972 (started by 28953 in F:\ IDcard\idCard)
+2018-03-08 15:03:08.436  INFO 1972 --- [main] com.westlife.demo.Application            : No active profile set, falling back to default profiles: default
+2018-03-08 15:03:08.504  INFO 1972 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1198b989: startup date [Thu Mar 08 15:03:08 CST 2018]; root of context hierarchy
+2018-03-08 15:03:10.210  INFO 1972 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-03-08 15:03:10.984  INFO 1972 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration' of type [class org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-03-08 15:03:11.115  INFO 1972 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'validator' of type [class org.springframework.validation.beanvalidation.LocalValidatorFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-03-08 15:03:11.286  INFO 1972 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$2920aae0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-03-08 15:03:11.597  INFO 1972 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'redisConfig' of type [class com.westlife.demo.service.RedisConfig$$EnhancerBySpringCGLIB$$f6931d94] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-03-08 15:03:11.626  INFO 1972 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'keyGenerator' of type [class com.westlife.demo.service.RedisConfig$1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-03-08 15:03:11.627  INFO 1972 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cache.annotation.ProxyCachingConfiguration' of type [class org.springframework.cache.annotation.ProxyCachingConfiguration$$EnhancerBySpringCGLIB$$7232e0fe] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-03-08 15:03:12.418  INFO 1972 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8081 (http)
+2018-03-08 15:03:12.430  INFO 1972 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-03-08 15:03:12.431  INFO 1972 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.24
+2018-03-08 15:03:12.994  INFO 1972 --- [localhost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2018-03-08 15:03:13.008  INFO 1972 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-03-08 15:03:13.011  INFO 1972 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4518 ms
+2018-03-08 15:03:13.358  INFO 1972 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-03-08 15:03:13.362  INFO 1972 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'errorPageFilter' to: [/*]
+2018-03-08 15:03:13.362  INFO 1972 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-03-08 15:03:13.363  INFO 1972 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-03-08 15:03:13.363  INFO 1972 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-03-08 15:03:13.363  INFO 1972 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-03-08 15:03:15.453  INFO 1972 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/queryIDCrad],methods=[POST]}" onto public com.westlife.demo.model.IDCard com.westlife.demo.controller.IDCardController.queryIDCrad(com.westlife.demo.common.RequestDto,org.springframework.validation.BindingResult) throws com.westlife.demo.common.GeneralException,java.text.ParseException
+2018-03-08 15:03:15.462  INFO 1972 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/v2/api-docs],methods=[GET]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String)
+2018-03-08 15:03:15.467  INFO 1972 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2018-03-08 15:03:15.468  INFO 1972 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2018-03-08 15:03:15.469  INFO 1972 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2018-03-08 15:03:15.474  INFO 1972 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-08 15:03:15.475  INFO 1972 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-08 15:03:16.030  INFO 1972 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1198b989: startup date [Thu Mar 08 15:03:08 CST 2018]; root of context hierarchy
+2018-03-08 15:03:16.133  INFO 1972 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-08 15:03:16.133  INFO 1972 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-08 15:03:16.204  INFO 1972 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-08 15:03:16.914  INFO 1972 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-03-08 15:03:16.921  INFO 1972 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'readDataSource' has been autodetected for JMX exposure
+2018-03-08 15:03:16.933  INFO 1972 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'readDataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=readDataSource,type=DruidDataSource]
+2018-03-08 15:03:16.957  INFO 1972 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2018-03-08 15:03:16.997  INFO 1972 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found {0} custom documentation plugin(s)
+2018-03-08 15:03:17.007  INFO 1972 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2018-03-08 15:03:17.013  INFO 1972 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method queryIDCrad was 根据查询身份证号查询身份信息swagger
+2018-03-08 15:03:17.016  INFO 1972 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: queryIDCrad belongs to groups: [[ResourceGroup{groupName='根据查询身份证号查询身份信息swagger', position=0, controller=com.westlife.demo.controller.IDCardController}]] 
+2018-03-08 15:03:17.032  INFO 1972 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Created resource listing Path: /default/根据查询身份证号查询身份信息swagger Description: 根据查询身份证号查询身份信息swagger Position: 0
+2018-03-08 15:03:17.068  INFO 1972 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: com.westlife.demo.common.RequestDto(false)
+2018-03-08 15:03:17.069  INFO 1972 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key com.westlife.demo.common.RequestDto(false)
+2018-03-08 15:03:17.080  INFO 1972 --- [main] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: com.westlife.demo.common.RequestDto(false)
+2018-03-08 15:03:17.081  INFO 1972 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key com.westlife.demo.common.RequestDto(false)
+2018-03-08 15:03:17.148  INFO 1972 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: com.westlife.demo.common.RequestDto(false)
+2018-03-08 15:03:17.149  INFO 1972 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key com.westlife.demo.common.RequestDto(false)
+2018-03-08 15:03:17.167  INFO 1972 --- [main] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: com.westlife.demo.common.RequestDto(false)
+2018-03-08 15:03:17.168  INFO 1972 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key com.westlife.demo.common.RequestDto(false)
+2018-03-08 15:03:17.170  INFO 1972 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: com.westlife.demo.model.IDCard(true)
+2018-03-08 15:03:17.170  INFO 1972 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key com.westlife.demo.model.IDCard(true)
+2018-03-08 15:03:17.171  INFO 1972 --- [main] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: com.westlife.demo.model.IDCard(true)
+2018-03-08 15:03:17.171  INFO 1972 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key com.westlife.demo.model.IDCard(true)
+2018-03-08 15:03:17.190  INFO 1972 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: com.westlife.demo.model.IDCard(true)
+2018-03-08 15:03:17.192  INFO 1972 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key com.westlife.demo.model.IDCard(true)
+2018-03-08 15:03:17.193  INFO 1972 --- [main] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: com.westlife.demo.model.IDCard(true)
+2018-03-08 15:03:17.194  INFO 1972 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key com.westlife.demo.model.IDCard(true)
+2018-03-08 15:03:17.199  INFO 1972 --- [main] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /queryIDCrad.com.westlife.demo.controller.IDCardController.queryIDCrad.DefaultGenericTypeNamingStrategy
+2018-03-08 15:03:17.199  INFO 1972 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /queryIDCrad.com.westlife.demo.controller.IDCardController.queryIDCrad.DefaultGenericTypeNamingStrategy
+2018-03-08 15:03:17.222  INFO 1972 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method queryIDCrad was 根据查询身份证号查询身份信息swagger
+2018-03-08 15:03:17.244  INFO 1972 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method queryIDCrad was 根据查询身份证号查询身份信息swagger
+2018-03-08 15:03:17.370  INFO 1972 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8081 (http)
+2018-03-08 15:03:17.379  INFO 1972 --- [main] com.westlife.demo.Application            : Started Application in 9.393 seconds (JVM running for 10.025)
+2018-03-08 15:03:17.379  INFO 1972 --- [main] com.westlife.demo.Application            : SpringBoot加载完毕
+2018-03-08 15:03:40.910  INFO 1972 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-03-08 15:03:40.910  INFO 1972 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-03-08 15:03:40.947  INFO 1972 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 37 ms
+2018-03-08 15:05:02.019 ERROR 4460 --- [main] o.s.b.l.LoggingApplicationListener       : Cannot set level: DEBUG   for 'org.springframework.web'
+2018-03-08 15:05:02.021 ERROR 4460 --- [main] o.s.b.l.LoggingApplicationListener       : Cannot set level: INFO   for 'null'
+2018-03-08 15:05:02.116  INFO 4460 --- [main] com.westlife.demo.Application            : Starting Application on LAPTOP-NQRD58OA with PID 4460 (started by 28953 in F:\ IDcard\idCard)
+2018-03-08 15:05:02.117  INFO 4460 --- [main] com.westlife.demo.Application            : No active profile set, falling back to default profiles: default
+2018-03-08 15:05:02.224  INFO 4460 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1198b989: startup date [Thu Mar 08 15:05:02 CST 2018]; root of context hierarchy
+2018-03-08 15:05:04.311  INFO 4460 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-03-08 15:05:05.168  INFO 4460 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration' of type [class org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-03-08 15:05:05.347  INFO 4460 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'validator' of type [class org.springframework.validation.beanvalidation.LocalValidatorFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-03-08 15:05:05.558  INFO 4460 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$dc40e96f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-03-08 15:05:05.926  INFO 4460 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'redisConfig' of type [class com.westlife.demo.service.RedisConfig$$EnhancerBySpringCGLIB$$a9b35c23] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-03-08 15:05:05.960  INFO 4460 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'keyGenerator' of type [class com.westlife.demo.service.RedisConfig$1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-03-08 15:05:05.962  INFO 4460 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cache.annotation.ProxyCachingConfiguration' of type [class org.springframework.cache.annotation.ProxyCachingConfiguration$$EnhancerBySpringCGLIB$$25531f8d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-03-08 15:05:06.844  INFO 4460 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8081 (http)
+2018-03-08 15:05:06.861  INFO 4460 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-03-08 15:05:06.862  INFO 4460 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.24
+2018-03-08 15:05:07.592  INFO 4460 --- [localhost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2018-03-08 15:05:07.603  INFO 4460 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-03-08 15:05:07.609  INFO 4460 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 5388 ms
+2018-03-08 15:05:08.047  INFO 4460 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-03-08 15:05:08.057  INFO 4460 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'errorPageFilter' to: [/*]
+2018-03-08 15:05:08.059  INFO 4460 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-03-08 15:05:08.059  INFO 4460 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-03-08 15:05:08.059  INFO 4460 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-03-08 15:05:08.060  INFO 4460 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-03-08 15:05:10.610  INFO 4460 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/queryIDCrad],methods=[POST]}" onto public com.westlife.demo.model.IDCard com.westlife.demo.controller.IDCardController.queryIDCrad(com.westlife.demo.common.RequestDto,org.springframework.validation.BindingResult) throws com.westlife.demo.common.GeneralException,java.text.ParseException
+2018-03-08 15:05:10.613  INFO 4460 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/v2/api-docs],methods=[GET]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String)
+2018-03-08 15:05:10.620  INFO 4460 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2018-03-08 15:05:10.621  INFO 4460 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2018-03-08 15:05:10.622  INFO 4460 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2018-03-08 15:05:10.627  INFO 4460 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-08 15:05:10.628  INFO 4460 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-08 15:05:11.197  INFO 4460 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1198b989: startup date [Thu Mar 08 15:05:02 CST 2018]; root of context hierarchy
+2018-03-08 15:05:11.325  INFO 4460 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-08 15:05:11.326  INFO 4460 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-08 15:05:11.419  INFO 4460 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-08 15:05:12.349  INFO 4460 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-03-08 15:05:12.359  INFO 4460 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'readDataSource' has been autodetected for JMX exposure
+2018-03-08 15:05:12.370  INFO 4460 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'readDataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=readDataSource,type=DruidDataSource]
+2018-03-08 15:05:12.398  INFO 4460 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2018-03-08 15:05:12.440  INFO 4460 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found {0} custom documentation plugin(s)
+2018-03-08 15:05:12.468  INFO 4460 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2018-03-08 15:05:12.478  INFO 4460 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method queryIDCrad was 根据查询身份证号查询身份信息swagger
+2018-03-08 15:05:12.494  INFO 4460 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: queryIDCrad belongs to groups: [[ResourceGroup{groupName='根据查询身份证号查询身份信息swagger', position=0, controller=com.westlife.demo.controller.IDCardController}]] 
+2018-03-08 15:05:12.507  INFO 4460 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Created resource listing Path: /default/根据查询身份证号查询身份信息swagger Description: 根据查询身份证号查询身份信息swagger Position: 0
+2018-03-08 15:05:12.557  INFO 4460 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: com.westlife.demo.common.RequestDto(false)
+2018-03-08 15:05:12.559  INFO 4460 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key com.westlife.demo.common.RequestDto(false)
+2018-03-08 15:05:12.600  INFO 4460 --- [main] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: com.westlife.demo.common.RequestDto(false)
+2018-03-08 15:05:12.602  INFO 4460 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key com.westlife.demo.common.RequestDto(false)
+2018-03-08 15:05:12.676  INFO 4460 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: com.westlife.demo.common.RequestDto(false)
+2018-03-08 15:05:12.676  INFO 4460 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key com.westlife.demo.common.RequestDto(false)
+2018-03-08 15:05:12.681  INFO 4460 --- [main] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: com.westlife.demo.common.RequestDto(false)
+2018-03-08 15:05:12.682  INFO 4460 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key com.westlife.demo.common.RequestDto(false)
+2018-03-08 15:05:12.693  INFO 4460 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: com.westlife.demo.model.IDCard(true)
+2018-03-08 15:05:12.693  INFO 4460 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key com.westlife.demo.model.IDCard(true)
+2018-03-08 15:05:12.694  INFO 4460 --- [main] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: com.westlife.demo.model.IDCard(true)
+2018-03-08 15:05:12.694  INFO 4460 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key com.westlife.demo.model.IDCard(true)
+2018-03-08 15:05:12.708  INFO 4460 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: com.westlife.demo.model.IDCard(true)
+2018-03-08 15:05:12.708  INFO 4460 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key com.westlife.demo.model.IDCard(true)
+2018-03-08 15:05:12.709  INFO 4460 --- [main] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: com.westlife.demo.model.IDCard(true)
+2018-03-08 15:05:12.709  INFO 4460 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key com.westlife.demo.model.IDCard(true)
+2018-03-08 15:05:12.711  INFO 4460 --- [main] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /queryIDCrad.com.westlife.demo.controller.IDCardController.queryIDCrad.DefaultGenericTypeNamingStrategy
+2018-03-08 15:05:12.711  INFO 4460 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /queryIDCrad.com.westlife.demo.controller.IDCardController.queryIDCrad.DefaultGenericTypeNamingStrategy
+2018-03-08 15:05:12.739  INFO 4460 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method queryIDCrad was 根据查询身份证号查询身份信息swagger
+2018-03-08 15:05:12.773  INFO 4460 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method queryIDCrad was 根据查询身份证号查询身份信息swagger
+2018-03-08 15:05:12.910  INFO 4460 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8081 (http)
+2018-03-08 15:05:12.926  INFO 4460 --- [main] com.westlife.demo.Application            : Started Application in 11.285 seconds (JVM running for 11.878)
+2018-03-08 15:05:12.926  INFO 4460 --- [main] com.westlife.demo.Application            : SpringBoot加载完毕
+2018-03-08 15:05:21.724  INFO 4460 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-03-08 15:05:21.725  INFO 4460 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-03-08 15:05:21.781  INFO 4460 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 56 ms
+2018-03-08 15:15:09.538 ERROR 24864 --- [main] o.s.b.l.LoggingApplicationListener       : Cannot set level: DEBUG   for 'org.springframework.web'
+2018-03-08 15:15:09.543 ERROR 24864 --- [main] o.s.b.l.LoggingApplicationListener       : Cannot set level: INFO   for 'null'
+2018-03-08 15:15:09.669  INFO 24864 --- [main] com.westlife.demo.Application            : Starting Application on LAPTOP-NQRD58OA with PID 24864 (started by 28953 in F:\ IDcard\idCard)
+2018-03-08 15:15:09.670  INFO 24864 --- [main] com.westlife.demo.Application            : No active profile set, falling back to default profiles: default
+2018-03-08 15:15:09.761  INFO 24864 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1198b989: startup date [Thu Mar 08 15:15:09 CST 2018]; root of context hierarchy
+2018-03-08 15:15:12.023  INFO 24864 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-03-08 15:15:13.017  INFO 24864 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration' of type [class org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-03-08 15:15:13.250  INFO 24864 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'validator' of type [class org.springframework.validation.beanvalidation.LocalValidatorFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-03-08 15:15:13.488  INFO 24864 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$1216563d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-03-08 15:15:13.848  INFO 24864 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'redisConfig' of type [class com.westlife.demo.service.RedisConfig$$EnhancerBySpringCGLIB$$df88c8f1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-03-08 15:15:13.881  INFO 24864 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'keyGenerator' of type [class com.westlife.demo.service.RedisConfig$1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-03-08 15:15:13.886  INFO 24864 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cache.annotation.ProxyCachingConfiguration' of type [class org.springframework.cache.annotation.ProxyCachingConfiguration$$EnhancerBySpringCGLIB$$5b288c5b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-03-08 15:15:14.760  INFO 24864 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8081 (http)
+2018-03-08 15:15:14.781  INFO 24864 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-03-08 15:15:14.782  INFO 24864 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.24
+2018-03-08 15:15:15.378  INFO 24864 --- [localhost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2018-03-08 15:15:15.389  INFO 24864 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-03-08 15:15:15.389  INFO 24864 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 5633 ms
+2018-03-08 15:15:15.772  INFO 24864 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-03-08 15:15:15.782  INFO 24864 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'errorPageFilter' to: [/*]
+2018-03-08 15:15:15.785  INFO 24864 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-03-08 15:15:15.786  INFO 24864 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-03-08 15:15:15.786  INFO 24864 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-03-08 15:15:15.786  INFO 24864 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-03-08 15:15:18.132  INFO 24864 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/queryIDCrad],methods=[POST]}" onto public com.westlife.demo.model.IDCard com.westlife.demo.controller.IDCardController.queryIDCrad(com.westlife.demo.common.RequestDto,org.springframework.validation.BindingResult) throws com.westlife.demo.common.GeneralException,java.text.ParseException
+2018-03-08 15:15:18.134  INFO 24864 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/v2/api-docs],methods=[GET]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String)
+2018-03-08 15:15:18.144  INFO 24864 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2018-03-08 15:15:18.145  INFO 24864 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2018-03-08 15:15:18.146  INFO 24864 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2018-03-08 15:15:18.155  INFO 24864 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-08 15:15:18.155  INFO 24864 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-08 15:15:18.854  INFO 24864 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1198b989: startup date [Thu Mar 08 15:15:09 CST 2018]; root of context hierarchy
+2018-03-08 15:15:18.963  INFO 24864 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-08 15:15:18.963  INFO 24864 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-08 15:15:19.034  INFO 24864 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-08 15:15:19.988  INFO 24864 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-03-08 15:15:19.990  INFO 24864 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'readDataSource' has been autodetected for JMX exposure
+2018-03-08 15:15:19.999  INFO 24864 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'readDataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=readDataSource,type=DruidDataSource]
+2018-03-08 15:15:20.027  INFO 24864 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2018-03-08 15:15:20.067  INFO 24864 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found {0} custom documentation plugin(s)
+2018-03-08 15:15:20.093  INFO 24864 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2018-03-08 15:15:20.100  INFO 24864 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method queryIDCrad was 根据查询身份证号查询身份信息swagger
+2018-03-08 15:15:20.102  INFO 24864 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: queryIDCrad belongs to groups: [[ResourceGroup{groupName='根据查询身份证号查询身份信息swagger', position=0, controller=com.westlife.demo.controller.IDCardController}]] 
+2018-03-08 15:15:20.116  INFO 24864 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Created resource listing Path: /default/根据查询身份证号查询身份信息swagger Description: 根据查询身份证号查询身份信息swagger Position: 0
+2018-03-08 15:15:20.148  INFO 24864 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: com.westlife.demo.common.RequestDto(false)
+2018-03-08 15:15:20.149  INFO 24864 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key com.westlife.demo.common.RequestDto(false)
+2018-03-08 15:15:20.161  INFO 24864 --- [main] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: com.westlife.demo.common.RequestDto(false)
+2018-03-08 15:15:20.161  INFO 24864 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key com.westlife.demo.common.RequestDto(false)
+2018-03-08 15:15:20.228  INFO 24864 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: com.westlife.demo.common.RequestDto(false)
+2018-03-08 15:15:20.228  INFO 24864 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key com.westlife.demo.common.RequestDto(false)
+2018-03-08 15:15:20.235  INFO 24864 --- [main] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: com.westlife.demo.common.RequestDto(false)
+2018-03-08 15:15:20.235  INFO 24864 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key com.westlife.demo.common.RequestDto(false)
+2018-03-08 15:15:20.247  INFO 24864 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: com.westlife.demo.model.IDCard(true)
+2018-03-08 15:15:20.247  INFO 24864 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key com.westlife.demo.model.IDCard(true)
+2018-03-08 15:15:20.248  INFO 24864 --- [main] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: com.westlife.demo.model.IDCard(true)
+2018-03-08 15:15:20.249  INFO 24864 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key com.westlife.demo.model.IDCard(true)
+2018-03-08 15:15:20.266  INFO 24864 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: com.westlife.demo.model.IDCard(true)
+2018-03-08 15:15:20.267  INFO 24864 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key com.westlife.demo.model.IDCard(true)
+2018-03-08 15:15:20.267  INFO 24864 --- [main] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: com.westlife.demo.model.IDCard(true)
+2018-03-08 15:15:20.267  INFO 24864 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key com.westlife.demo.model.IDCard(true)
+2018-03-08 15:15:20.269  INFO 24864 --- [main] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /queryIDCrad.com.westlife.demo.controller.IDCardController.queryIDCrad.DefaultGenericTypeNamingStrategy
+2018-03-08 15:15:20.270  INFO 24864 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /queryIDCrad.com.westlife.demo.controller.IDCardController.queryIDCrad.DefaultGenericTypeNamingStrategy
+2018-03-08 15:15:20.301  INFO 24864 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method queryIDCrad was 根据查询身份证号查询身份信息swagger
+2018-03-08 15:15:20.330  INFO 24864 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method queryIDCrad was 根据查询身份证号查询身份信息swagger
+2018-03-08 15:15:20.522  INFO 24864 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8081 (http)
+2018-03-08 15:15:20.529  INFO 24864 --- [main] com.westlife.demo.Application            : Started Application in 11.391 seconds (JVM running for 11.937)
+2018-03-08 15:15:20.530  INFO 24864 --- [main] com.westlife.demo.Application            : SpringBoot加载完毕
+2018-03-08 15:15:23.262  INFO 24864 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-03-08 15:15:23.262  INFO 24864 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-03-08 15:15:23.303  INFO 24864 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 41 ms
+2018-03-08 15:23:52.140 ERROR 10888 --- [main] o.s.b.l.LoggingApplicationListener       : Cannot set level: DEBUG   for 'org.springframework.web'
+2018-03-08 15:23:52.142 ERROR 10888 --- [main] o.s.b.l.LoggingApplicationListener       : Cannot set level: INFO   for 'null'
+2018-03-08 15:23:52.254  INFO 10888 --- [main] com.westlife.demo.Application            : Starting Application on LAPTOP-NQRD58OA with PID 10888 (started by 28953 in F:\ IDcard\idCard)
+2018-03-08 15:23:52.255  INFO 10888 --- [main] com.westlife.demo.Application            : No active profile set, falling back to default profiles: default
+2018-03-08 15:23:52.344  INFO 10888 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1198b989: startup date [Thu Mar 08 15:23:52 CST 2018]; root of context hierarchy
+2018-03-08 15:23:54.499  INFO 10888 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-03-08 15:23:55.292  INFO 10888 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration' of type [class org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-03-08 15:23:55.408  INFO 10888 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'validator' of type [class org.springframework.validation.beanvalidation.LocalValidatorFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-03-08 15:23:55.644  INFO 10888 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d5212977] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-03-08 15:23:56.078  INFO 10888 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'redisConfig' of type [class com.westlife.demo.service.RedisConfig$$EnhancerBySpringCGLIB$$a2939c2b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-03-08 15:23:56.110  INFO 10888 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'keyGenerator' of type [class com.westlife.demo.service.RedisConfig$1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-03-08 15:23:56.112  INFO 10888 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cache.annotation.ProxyCachingConfiguration' of type [class org.springframework.cache.annotation.ProxyCachingConfiguration$$EnhancerBySpringCGLIB$$1e335f95] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-03-08 15:23:57.175  INFO 10888 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8081 (http)
+2018-03-08 15:23:57.200  INFO 10888 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-03-08 15:23:57.201  INFO 10888 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.24
+2018-03-08 15:23:57.909  INFO 10888 --- [localhost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2018-03-08 15:23:57.915  INFO 10888 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-03-08 15:23:57.915  INFO 10888 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 5574 ms
+2018-03-08 15:23:58.359  INFO 10888 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-03-08 15:23:58.363  INFO 10888 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'errorPageFilter' to: [/*]
+2018-03-08 15:23:58.372  INFO 10888 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-03-08 15:23:58.373  INFO 10888 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-03-08 15:23:58.374  INFO 10888 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-03-08 15:23:58.374  INFO 10888 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-03-08 15:24:00.595  INFO 10888 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String com.westlife.demo.controller.IDCardController.index()
+2018-03-08 15:24:00.597  INFO 10888 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/queryIDCrad],methods=[POST]}" onto public com.westlife.demo.model.IDCard com.westlife.demo.controller.IDCardControllerSwagger.queryIDCrad(com.westlife.demo.common.RequestDto,org.springframework.validation.BindingResult) throws com.westlife.demo.common.GeneralException,java.text.ParseException
+2018-03-08 15:24:00.598  INFO 10888 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/v2/api-docs],methods=[GET]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String)
+2018-03-08 15:24:00.613  INFO 10888 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2018-03-08 15:24:00.614  INFO 10888 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2018-03-08 15:24:00.615  INFO 10888 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2018-03-08 15:24:00.623  INFO 10888 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-08 15:24:00.624  INFO 10888 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-08 15:24:01.314  INFO 10888 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1198b989: startup date [Thu Mar 08 15:23:52 CST 2018]; root of context hierarchy
+2018-03-08 15:24:01.527  INFO 10888 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-08 15:24:01.528  INFO 10888 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-08 15:24:01.644  INFO 10888 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-08 15:24:02.484  INFO 10888 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-03-08 15:24:02.489  INFO 10888 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'readDataSource' has been autodetected for JMX exposure
+2018-03-08 15:24:02.498  INFO 10888 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'readDataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=readDataSource,type=DruidDataSource]
+2018-03-08 15:24:02.551  INFO 10888 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2018-03-08 15:24:02.594  INFO 10888 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found {0} custom documentation plugin(s)
+2018-03-08 15:24:02.611  INFO 10888 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2018-03-08 15:24:02.617  INFO 10888 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method index was id-card-controller
+2018-03-08 15:24:02.622  INFO 10888 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: index belongs to groups: [[ResourceGroup{groupName='id-card-controller', position=0, controller=com.westlife.demo.controller.IDCardController}]] 
+2018-03-08 15:24:02.625  INFO 10888 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method queryIDCrad was 根据查询身份证号查询身份信息swagger
+2018-03-08 15:24:02.625  INFO 10888 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: queryIDCrad belongs to groups: [[ResourceGroup{groupName='根据查询身份证号查询身份信息swagger', position=0, controller=com.westlife.demo.controller.IDCardControllerSwagger}]] 
+2018-03-08 15:24:02.628  INFO 10888 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Created resource listing Path: /default/id-card-controller Description: id-card-controller Position: 0
+2018-03-08 15:24:02.629  INFO 10888 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Created resource listing Path: /default/根据查询身份证号查询身份信息swagger Description: 根据查询身份证号查询身份信息swagger Position: 0
+2018-03-08 15:24:02.656  INFO 10888 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.lang.String(true)
+2018-03-08 15:24:02.656  INFO 10888 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key java.lang.String(true)
+2018-03-08 15:24:02.665  INFO 10888 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.lang.String(true)
+2018-03-08 15:24:02.665  INFO 10888 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+2018-03-08 15:24:02.680  INFO 10888 --- [main] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /.com.westlife.demo.controller.IDCardController.index.DefaultGenericTypeNamingStrategy
+2018-03-08 15:24:02.681  INFO 10888 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /.com.westlife.demo.controller.IDCardController.index.DefaultGenericTypeNamingStrategy
+2018-03-08 15:24:02.693  INFO 10888 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method index was id-card-controller
+2018-03-08 15:24:02.699  INFO 10888 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method index was id-card-controller
+2018-03-08 15:24:02.710  INFO 10888 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method index was id-card-controller
+2018-03-08 15:24:02.712  INFO 10888 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method index was id-card-controller
+2018-03-08 15:24:02.713  INFO 10888 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method index was id-card-controller
+2018-03-08 15:24:02.715  INFO 10888 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method index was id-card-controller
+2018-03-08 15:24:02.717  INFO 10888 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method index was id-card-controller
+2018-03-08 15:24:02.718  INFO 10888 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method index was id-card-controller
+2018-03-08 15:24:02.721  INFO 10888 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method index was id-card-controller
+2018-03-08 15:24:02.722  INFO 10888 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method index was id-card-controller
+2018-03-08 15:24:02.722  INFO 10888 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method index was id-card-controller
+2018-03-08 15:24:02.723  INFO 10888 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method index was id-card-controller
+2018-03-08 15:24:02.724  INFO 10888 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method index was id-card-controller
+2018-03-08 15:24:02.725  INFO 10888 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method index was id-card-controller
+2018-03-08 15:24:02.725  INFO 10888 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method index was id-card-controller
+2018-03-08 15:24:02.726  INFO 10888 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method index was id-card-controller
+2018-03-08 15:24:02.761  INFO 10888 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: com.westlife.demo.common.RequestDto(false)
+2018-03-08 15:24:02.762  INFO 10888 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key com.westlife.demo.common.RequestDto(false)
+2018-03-08 15:24:02.763  INFO 10888 --- [main] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: com.westlife.demo.common.RequestDto(false)
+2018-03-08 15:24:02.763  INFO 10888 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key com.westlife.demo.common.RequestDto(false)
+2018-03-08 15:24:02.824  INFO 10888 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: com.westlife.demo.common.RequestDto(false)
+2018-03-08 15:24:02.824  INFO 10888 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key com.westlife.demo.common.RequestDto(false)
+2018-03-08 15:24:02.824  INFO 10888 --- [main] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: com.westlife.demo.common.RequestDto(false)
+2018-03-08 15:24:02.825  INFO 10888 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key com.westlife.demo.common.RequestDto(false)
+2018-03-08 15:24:02.826  INFO 10888 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: com.westlife.demo.model.IDCard(true)
+2018-03-08 15:24:02.826  INFO 10888 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key com.westlife.demo.model.IDCard(true)
+2018-03-08 15:24:02.826  INFO 10888 --- [main] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: com.westlife.demo.model.IDCard(true)
+2018-03-08 15:24:02.826  INFO 10888 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key com.westlife.demo.model.IDCard(true)
+2018-03-08 15:24:02.836  INFO 10888 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: com.westlife.demo.model.IDCard(true)
+2018-03-08 15:24:02.840  INFO 10888 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key com.westlife.demo.model.IDCard(true)
+2018-03-08 15:24:02.844  INFO 10888 --- [main] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: com.westlife.demo.model.IDCard(true)
+2018-03-08 15:24:02.844  INFO 10888 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key com.westlife.demo.model.IDCard(true)
+2018-03-08 15:24:02.845  INFO 10888 --- [main] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /queryIDCrad.com.westlife.demo.controller.IDCardControllerSwagger.queryIDCrad.DefaultGenericTypeNamingStrategy
+2018-03-08 15:24:02.845  INFO 10888 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /queryIDCrad.com.westlife.demo.controller.IDCardControllerSwagger.queryIDCrad.DefaultGenericTypeNamingStrategy
+2018-03-08 15:24:02.854  INFO 10888 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method queryIDCrad was 根据查询身份证号查询身份信息swagger
+2018-03-08 15:24:02.856  INFO 10888 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method queryIDCrad was 根据查询身份证号查询身份信息swagger
+2018-03-08 15:24:02.962  INFO 10888 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8081 (http)
+2018-03-08 15:24:02.975  INFO 10888 --- [main] com.westlife.demo.Application            : Started Application in 11.203 seconds (JVM running for 11.753)
+2018-03-08 15:24:02.976  INFO 10888 --- [main] com.westlife.demo.Application            : SpringBoot加载完毕
+2018-03-08 15:24:11.774  INFO 10888 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-03-08 15:24:11.774  INFO 10888 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-03-08 15:24:11.822  INFO 10888 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 48 ms
+2018-03-08 15:25:17.555 ERROR 4648 --- [main] o.s.b.l.LoggingApplicationListener       : Cannot set level: DEBUG   for 'org.springframework.web'
+2018-03-08 15:25:17.558 ERROR 4648 --- [main] o.s.b.l.LoggingApplicationListener       : Cannot set level: INFO   for 'null'
+2018-03-08 15:25:17.658  INFO 4648 --- [main] com.westlife.demo.Application            : Starting Application on LAPTOP-NQRD58OA with PID 4648 (started by 28953 in F:\ IDcard\idCard)
+2018-03-08 15:25:17.659  INFO 4648 --- [main] com.westlife.demo.Application            : No active profile set, falling back to default profiles: default
+2018-03-08 15:25:17.737  INFO 4648 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1198b989: startup date [Thu Mar 08 15:25:17 CST 2018]; root of context hierarchy
+2018-03-08 15:25:20.107  INFO 4648 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-03-08 15:25:21.009  INFO 4648 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration' of type [class org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-03-08 15:25:21.155  INFO 4648 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'validator' of type [class org.springframework.validation.beanvalidation.LocalValidatorFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-03-08 15:25:21.336  INFO 4648 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d5212977] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-03-08 15:25:21.666  INFO 4648 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'redisConfig' of type [class com.westlife.demo.service.RedisConfig$$EnhancerBySpringCGLIB$$a2939c2b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-03-08 15:25:21.693  INFO 4648 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'keyGenerator' of type [class com.westlife.demo.service.RedisConfig$1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-03-08 15:25:21.694  INFO 4648 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cache.annotation.ProxyCachingConfiguration' of type [class org.springframework.cache.annotation.ProxyCachingConfiguration$$EnhancerBySpringCGLIB$$1e335f95] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-03-08 15:25:22.529  INFO 4648 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8081 (http)
+2018-03-08 15:25:22.545  INFO 4648 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-03-08 15:25:22.552  INFO 4648 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.24
+2018-03-08 15:25:23.173  INFO 4648 --- [localhost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2018-03-08 15:25:23.178  INFO 4648 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-03-08 15:25:23.179  INFO 4648 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 5446 ms
+2018-03-08 15:25:23.573  INFO 4648 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-03-08 15:25:23.577  INFO 4648 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'errorPageFilter' to: [/*]
+2018-03-08 15:25:23.578  INFO 4648 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-03-08 15:25:23.578  INFO 4648 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-03-08 15:25:23.578  INFO 4648 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-03-08 15:25:23.579  INFO 4648 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-03-08 15:25:26.093  INFO 4648 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String com.westlife.demo.controller.IDCardController.index()
+2018-03-08 15:25:26.099  INFO 4648 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/queryIDCrad],methods=[POST]}" onto public com.westlife.demo.model.IDCard com.westlife.demo.controller.IDCardControllerSwagger.queryIDCrad(com.westlife.demo.common.RequestDto,org.springframework.validation.BindingResult) throws com.westlife.demo.common.GeneralException,java.text.ParseException
+2018-03-08 15:25:26.105  INFO 4648 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/v2/api-docs],methods=[GET]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String)
+2018-03-08 15:25:26.111  INFO 4648 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2018-03-08 15:25:26.111  INFO 4648 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2018-03-08 15:25:26.112  INFO 4648 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2018-03-08 15:25:26.120  INFO 4648 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-08 15:25:26.121  INFO 4648 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-08 15:25:26.924  INFO 4648 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1198b989: startup date [Thu Mar 08 15:25:17 CST 2018]; root of context hierarchy
+2018-03-08 15:25:27.062  INFO 4648 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-08 15:25:27.068  INFO 4648 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-08 15:25:27.158  INFO 4648 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-08 15:25:27.836  INFO 4648 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-03-08 15:25:27.842  INFO 4648 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'readDataSource' has been autodetected for JMX exposure
+2018-03-08 15:25:27.853  INFO 4648 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'readDataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=readDataSource,type=DruidDataSource]
+2018-03-08 15:25:27.885  INFO 4648 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2018-03-08 15:25:27.940  INFO 4648 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found {0} custom documentation plugin(s)
+2018-03-08 15:25:27.955  INFO 4648 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2018-03-08 15:25:27.960  INFO 4648 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method index was id-card-controller
+2018-03-08 15:25:27.963  INFO 4648 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: index belongs to groups: [[ResourceGroup{groupName='id-card-controller', position=0, controller=com.westlife.demo.controller.IDCardController}]] 
+2018-03-08 15:25:27.976  INFO 4648 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method queryIDCrad was 根据查询身份证号查询身份信息swagger
+2018-03-08 15:25:27.977  INFO 4648 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: queryIDCrad belongs to groups: [[ResourceGroup{groupName='根据查询身份证号查询身份信息swagger', position=0, controller=com.westlife.demo.controller.IDCardControllerSwagger}]] 
+2018-03-08 15:25:27.985  INFO 4648 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Created resource listing Path: /default/id-card-controller Description: id-card-controller Position: 0
+2018-03-08 15:25:27.986  INFO 4648 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Created resource listing Path: /default/根据查询身份证号查询身份信息swagger Description: 根据查询身份证号查询身份信息swagger Position: 0
+2018-03-08 15:25:28.027  INFO 4648 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.lang.String(true)
+2018-03-08 15:25:28.027  INFO 4648 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key java.lang.String(true)
+2018-03-08 15:25:28.056  INFO 4648 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.lang.String(true)
+2018-03-08 15:25:28.056  INFO 4648 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+2018-03-08 15:25:28.077  INFO 4648 --- [main] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /.com.westlife.demo.controller.IDCardController.index.DefaultGenericTypeNamingStrategy
+2018-03-08 15:25:28.078  INFO 4648 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /.com.westlife.demo.controller.IDCardController.index.DefaultGenericTypeNamingStrategy
+2018-03-08 15:25:28.095  INFO 4648 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method index was id-card-controller
+2018-03-08 15:25:28.114  INFO 4648 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method index was id-card-controller
+2018-03-08 15:25:28.122  INFO 4648 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method index was id-card-controller
+2018-03-08 15:25:28.123  INFO 4648 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method index was id-card-controller
+2018-03-08 15:25:28.124  INFO 4648 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method index was id-card-controller
+2018-03-08 15:25:28.125  INFO 4648 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method index was id-card-controller
+2018-03-08 15:25:28.126  INFO 4648 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method index was id-card-controller
+2018-03-08 15:25:28.128  INFO 4648 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method index was id-card-controller
+2018-03-08 15:25:28.129  INFO 4648 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method index was id-card-controller
+2018-03-08 15:25:28.132  INFO 4648 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method index was id-card-controller
+2018-03-08 15:25:28.141  INFO 4648 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method index was id-card-controller
+2018-03-08 15:25:28.143  INFO 4648 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method index was id-card-controller
+2018-03-08 15:25:28.145  INFO 4648 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method index was id-card-controller
+2018-03-08 15:25:28.146  INFO 4648 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method index was id-card-controller
+2018-03-08 15:25:28.150  INFO 4648 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method index was id-card-controller
+2018-03-08 15:25:28.152  INFO 4648 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method index was id-card-controller
+2018-03-08 15:25:28.194  INFO 4648 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: com.westlife.demo.common.RequestDto(false)
+2018-03-08 15:25:28.194  INFO 4648 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key com.westlife.demo.common.RequestDto(false)
+2018-03-08 15:25:28.195  INFO 4648 --- [main] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: com.westlife.demo.common.RequestDto(false)
+2018-03-08 15:25:28.196  INFO 4648 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key com.westlife.demo.common.RequestDto(false)
+2018-03-08 15:25:28.274  INFO 4648 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: com.westlife.demo.common.RequestDto(false)
+2018-03-08 15:25:28.274  INFO 4648 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key com.westlife.demo.common.RequestDto(false)
+2018-03-08 15:25:28.275  INFO 4648 --- [main] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: com.westlife.demo.common.RequestDto(false)
+2018-03-08 15:25:28.276  INFO 4648 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key com.westlife.demo.common.RequestDto(false)
+2018-03-08 15:25:28.279  INFO 4648 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: com.westlife.demo.model.IDCard(true)
+2018-03-08 15:25:28.279  INFO 4648 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key com.westlife.demo.model.IDCard(true)
+2018-03-08 15:25:28.279  INFO 4648 --- [main] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: com.westlife.demo.model.IDCard(true)
+2018-03-08 15:25:28.280  INFO 4648 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key com.westlife.demo.model.IDCard(true)
+2018-03-08 15:25:28.295  INFO 4648 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: com.westlife.demo.model.IDCard(true)
+2018-03-08 15:25:28.296  INFO 4648 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key com.westlife.demo.model.IDCard(true)
+2018-03-08 15:25:28.301  INFO 4648 --- [main] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: com.westlife.demo.model.IDCard(true)
+2018-03-08 15:25:28.305  INFO 4648 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key com.westlife.demo.model.IDCard(true)
+2018-03-08 15:25:28.306  INFO 4648 --- [main] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /queryIDCrad.com.westlife.demo.controller.IDCardControllerSwagger.queryIDCrad.DefaultGenericTypeNamingStrategy
+2018-03-08 15:25:28.308  INFO 4648 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /queryIDCrad.com.westlife.demo.controller.IDCardControllerSwagger.queryIDCrad.DefaultGenericTypeNamingStrategy
+2018-03-08 15:25:28.324  INFO 4648 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method queryIDCrad was 根据查询身份证号查询身份信息swagger
+2018-03-08 15:25:28.325  INFO 4648 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method queryIDCrad was 根据查询身份证号查询身份信息swagger
+2018-03-08 15:25:28.514  INFO 4648 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8081 (http)
+2018-03-08 15:25:28.525  INFO 4648 --- [main] com.westlife.demo.Application            : Started Application in 11.365 seconds (JVM running for 11.959)
+2018-03-08 15:25:28.526  INFO 4648 --- [main] com.westlife.demo.Application            : SpringBoot加载完毕
+2018-03-08 15:25:36.489  INFO 4648 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-03-08 15:25:36.489  INFO 4648 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-03-08 15:25:36.523  INFO 4648 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 34 ms

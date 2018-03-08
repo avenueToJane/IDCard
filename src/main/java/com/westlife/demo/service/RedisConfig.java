@@ -34,7 +34,7 @@ import org.springframework.data.redis.serializer.Jackson2JsonRedisSerializer;
 import com.fasterxml.jackson.annotation.JsonAutoDetect;
 import com.fasterxml.jackson.annotation.PropertyAccessor;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.westlife.demo.controller.IDCardController;
+
 
 /**
  * 
@@ -48,7 +48,7 @@ import com.westlife.demo.controller.IDCardController;
 @EnableCaching
 @PropertySource("classpath:application.properties")
 public class RedisConfig extends CachingConfigurerSupport {
-	protected static final Logger logger = LoggerFactory.getLogger(IDCardController.class);
+	protected static final Logger logger = LoggerFactory.getLogger(RedisConfig.class);
 	@Value("${spring.redis.host}")
 	String host;
 	@Value("${spring.redis.port}")

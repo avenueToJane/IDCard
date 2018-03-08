@@ -2,7 +2,7 @@ package com.westlife.demo.service;
 
 import org.springframework.stereotype.Component;
 
-import com.westlife.demo.controller.IDCardController;
+
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -26,7 +26,7 @@ import javax.annotation.Resource;
  */
 @Component
 public class RedisService {
-	protected static final Logger logger = LoggerFactory.getLogger(IDCardController.class);
+	protected static final Logger logger = LoggerFactory.getLogger(RedisService.class);
 	/**
 	 * StringRedisTemplate模板 ValueOperations这个接口的实现类为:DefaultValueOperations.
 	 * 在RedisTemplate中，已经提供了一个工厂方法:opsForValue()。 (如果为空，会创建一个对象，不为null则直接返回对象)
