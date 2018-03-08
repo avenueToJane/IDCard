@@ -43,7 +43,7 @@ import io.swagger.annotations.ApiResponse;
 import io.swagger.annotations.ApiResponses;
 
 //@Controller
-@Api(value = "根据查询省份证号查询身份信息Swagger",description="简单的API")
+@Api(value = "根据查询身份证号查询身份信息Swagger",description="简单的API")
 @RestController
 @EnableScheduling//定时任务的注解
 public class IDCardController
@@ -64,7 +64,7 @@ public class IDCardController
 	@Autowired
 	private RedisService redisService;
 	
-	@ApiOperation(value = "查询省份证信息", notes = "根据查询省份证号查询身份信息")
+	@ApiOperation(value = "查询身份证信息", notes = "根据查询身份证号查询身份信息")
 	@RequestMapping(value="/queryIDCrad", method = RequestMethod.POST)
 	public IDCard queryIDCrad(@ApiParam("身份证号码") @Valid @RequestBody(required = true)RequestDto requestDto
 			,BindingResult result) throws GeneralException, ParseException{
