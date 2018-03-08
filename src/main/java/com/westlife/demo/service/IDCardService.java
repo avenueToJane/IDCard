@@ -1,4 +1,6 @@
 package com.westlife.demo.service;
+import java.util.Date;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -7,6 +9,7 @@ import org.springframework.stereotype.Service;
 import com.westlife.demo.common.RequestDto;
 import com.westlife.demo.mapper.IDCardMapper;
 import com.westlife.demo.model.IDCard;
+import com.westlife.demo.util.ConcurrentDateUtil;
 
 @Service
 public class IDCardService {
@@ -27,6 +30,10 @@ public class IDCardService {
 		idcard.setBirthday(birthday);
 		idcard.setNumber(requestDto.getIDCard().substring(14, 17));//顺序码
 		String sex=requestDto.getIDCard().substring(17, 18);
+		Date date=new Date();
+		String nowYear=ConcurrentDateUtil.formatDateYYYY(date);//当前年份
+		String age=String.valueOf(Integer.valueOf(nowYear)-Integer.valueOf(year));
+		idcard.setAge(age);//年龄
 		if(!"X".equals(sex)) {
 			int sexInt=Integer.valueOf(sex);
 			if(sexInt%2==0) {//偶数
@@ -38,7 +45,7 @@ public class IDCardService {
 			idcard.setSex("男");
 		}
 		String describe="省份："+idcard.getProvince()+"  所属市："+idcard.getCity()+"  县区："+idcard.getArea()
-		+"  出生年月："+birthday+"  性别："+idcard.getSex()+"  顺序码："+idcard.getNumber();
+		+"  出生年月："+birthday+"  性别："+idcard.getSex()+"  年龄："+idcard.getAge()+"  顺序码："+idcard.getNumber();
 		idcard.setDescribe(describe);
 		return idcard;
 	}

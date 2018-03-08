@@ -32,7 +32,8 @@ public class IDCard implements Serializable{
 	private String number;
 	@ApiModelProperty("信息描述")
 	private String describe;
-	
+	@ApiModelProperty("年龄")
+	private String age;
 	
 	public String getProvinceid() {
 		return provinceid;
@@ -94,11 +95,11 @@ public class IDCard implements Serializable{
 	public void setDescribe(String describe) {
 		this.describe = describe;
 	}
-	@Override
-	public String toString() {
-		return "IDCard [provinceid=" + provinceid + ", province=" + province + ", cityid=" + cityid + ", city=" + city
-				+ ", areaid=" + areaid + ", area=" + area + ", birthday=" + birthday + ", sex=" + sex + ", number="
-				+ number + ", describe=" + describe + "]";
+	public String getAge() {
+		return age;
+	}
+	public void setAge(String age) {
+		this.age = age;
 	}
 	
 	
