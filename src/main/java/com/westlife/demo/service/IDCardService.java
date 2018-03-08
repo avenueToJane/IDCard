@@ -1,4 +1,5 @@
 package com.westlife.demo.service;
+import java.text.ParseException;
 import java.util.Date;
 
 import org.slf4j.Logger;
@@ -10,6 +11,7 @@ import com.westlife.demo.common.RequestDto;
 import com.westlife.demo.mapper.IDCardMapper;
 import com.westlife.demo.model.IDCard;
 import com.westlife.demo.util.ConcurrentDateUtil;
+import com.westlife.demo.util.DateDay;
 
 @Service
 public class IDCardService {
@@ -17,7 +19,7 @@ public class IDCardService {
 	protected static final Logger logger = LoggerFactory.getLogger(IDCardService.class);
 	@Autowired
 	private IDCardMapper idCardMapper;
-	public IDCard selectByIDCard(RequestDto requestDto) {
+	public IDCard selectByIDCard(RequestDto requestDto) throws ParseException {
 		String areas=requestDto.getIDCard().substring(0, 6);//前六位为行政区划代码
 		IDCard idcard = idCardMapper.selectByIDCard(areas);
 		if(idcard==null) {
@@ -29,23 +31,38 @@ public class IDCardService {
 		String birthday=year+"年"+month+"月"+day+"日";//出生年月日
 		idcard.setBirthday(birthday);
 		idcard.setNumber(requestDto.getIDCard().substring(14, 17));//顺序码
-		String sex=requestDto.getIDCard().substring(17, 18);
+		idcard.setAddressCode(areas);//地址码
+		idcard.setBirthCode(requestDto.getIDCard().substring(6, 14));//出生日期码
+		idcard.setCheckCode(requestDto.getIDCard().substring(17, 18));//校验码
+		String sex=requestDto.getIDCard().substring(16, 17);
 		Date date=new Date();
 		String nowYear=ConcurrentDateUtil.formatDateYYYY(date);//当前年份
 		String age=String.valueOf(Integer.valueOf(nowYear)-Integer.valueOf(year));
 		idcard.setAge(age);//年龄
-		if(!"X".equals(sex)) {
-			int sexInt=Integer.valueOf(sex);
-			if(sexInt%2==0) {//偶数
+		String lifeDay=DateDay.day(requestDto.getIDCard().substring(6, 14));
+		String millisecond=DateDay.millisecond(requestDto.getIDCard().substring(6, 14));
+		idcard.setMillisecond(millisecond);
+		idcard.setLifeDay(lifeDay);
+		int sexInt=Integer.valueOf(sex);
+		if(sexInt%2!=0) {//基数
 				idcard.setSex("男");
-			}else {
+		}else {//偶数
 				idcard.setSex("女");
-			}
-		}else {
-			idcard.setSex("男");
 		}
-		String describe="省份："+idcard.getProvince()+"  所属市："+idcard.getCity()+"  县区："+idcard.getArea()
-		+"  出生年月："+birthday+"  性别："+idcard.getSex()+"  年龄："+idcard.getAge()+"  顺序码："+idcard.getNumber();
+		String describe=
+		"  省份："+idcard.getProvince()+
+		"  所属市："+idcard.getCity()+
+		"  县区："+idcard.getArea()+
+		"  出生年月："+birthday+
+		"  性别："+idcard.getSex()+
+		"  年龄："+idcard.getAge()+
+		"  你来到这个世界：" + idcard.getLifeDay() + "天"+
+		"  你来到这个世界：" + idcard.getMillisecond() + "毫秒"+
+		"  地址码："+idcard.getAddressCode()+
+		"  出生日期码："+idcard.getBirthCode()+
+		"  顺序码："+idcard.getNumber()+
+		"  校验码："+idcard.getCheckCode();
+		
 		idcard.setDescribe(describe);
 		return idcard;
 	}

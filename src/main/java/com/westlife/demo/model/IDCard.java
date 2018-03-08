@@ -30,11 +30,21 @@ public class IDCard implements Serializable{
 	private String sex;
 	@ApiModelProperty("顺序码")
 	private String number;
+	@ApiModelProperty("校验码")
+	private String checkCode;
+	@ApiModelProperty("地址码")
+	private String addressCode;
+	@ApiModelProperty("出生日期码")
+	private String birthCode;
+	
 	@ApiModelProperty("信息描述")
 	private String describe;
 	@ApiModelProperty("年龄")
 	private String age;
-	
+	@ApiModelProperty("来到世多少天")
+	private String lifeDay;
+	@ApiModelProperty("来到世多少毫秒")
+	private String millisecond;
 	public String getProvinceid() {
 		return provinceid;
 	}
@@ -100,6 +110,36 @@ public class IDCard implements Serializable{
 	}
 	public void setAge(String age) {
 		this.age = age;
+	}
+	public String getLifeDay() {
+		return lifeDay;
+	}
+	public void setLifeDay(String lifeDay) {
+		this.lifeDay = lifeDay;
+	}
+	public String getMillisecond() {
+		return millisecond;
+	}
+	public void setMillisecond(String millisecond) {
+		this.millisecond = millisecond;
+	}
+	public String getCheckCode() {
+		return checkCode;
+	}
+	public void setCheckCode(String checkCode) {
+		this.checkCode = checkCode;
+	}
+	public String getAddressCode() {
+		return addressCode;
+	}
+	public void setAddressCode(String addressCode) {
+		this.addressCode = addressCode;
+	}
+	public String getBirthCode() {
+		return birthCode;
+	}
+	public void setBirthCode(String birthCode) {
+		this.birthCode = birthCode;
 	}
 	
 	

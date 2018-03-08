@@ -1,5 +1,6 @@
 package com.westlife.demo.controller;
 
+import java.text.ParseException;
 import java.util.List;
 import java.util.concurrent.ConcurrentHashMap;
 
@@ -66,7 +67,7 @@ public class IDCardController
 	@ApiOperation(value = "查询省份证信息", notes = "根据查询省份证号查询身份信息")
 	@RequestMapping(value="/queryIDCrad", method = RequestMethod.POST)
 	public IDCard queryIDCrad(@ApiParam("身份证号码") @Valid @RequestBody(required = true)RequestDto requestDto
-			,BindingResult result) throws GeneralException{
+			,BindingResult result) throws GeneralException, ParseException{
 		if (result.hasErrors()) {
 			List<FieldError> fieldErrors = result.getFieldErrors();
 			throw new GeneralException("5001" ,fieldErrors.get(0).getDefaultMessage());
