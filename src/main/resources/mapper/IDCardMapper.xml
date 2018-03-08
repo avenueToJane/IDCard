@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.westlife.demo.mapper.IDCardMapper">
+	<select id="selectByIDCard" resultType="com.westlife.demo.model.IDCard">
+	
+	    select p.provinceid,p.province,c.cityid,c.city,a.areaid,a.area
+	    from provinces p
+	    left join cities c on p.provinceid=c.provinceid
+	    left join areas a on c.cityid=a.cityid
+	    where a.areaid=#{areaid}
+	</select>
+
+</mapper>
