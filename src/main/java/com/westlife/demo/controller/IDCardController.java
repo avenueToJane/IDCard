@@ -88,4 +88,13 @@ public class IDCardController {
 		model.addAttribute("idCard", idCard);
 		return "info";
 	}
+	@RequestMapping(value = "/queryAll")
+	public String queryAll(Model model){
+		
+		List<IDCard> idCardList = idCardService.selectAll();
+		model.addAttribute("idCardList", idCardList);
+		System.out.println(idCardList);
+		return "list";
+		
+	}
 }

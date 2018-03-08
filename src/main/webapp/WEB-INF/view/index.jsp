@@ -21,7 +21,7 @@
 			   placeholder="请输入身份证号码">
 	</div>
 	
-	<button type="submit" class="btn btn-default" onclick="login();">提交</button>
+	<button type="submit" class="btn btn-default" onclick="login();">查询</button>
 	${error}
 </form>
 </div>

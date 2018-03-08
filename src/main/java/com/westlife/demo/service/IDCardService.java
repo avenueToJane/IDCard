@@ -1,6 +1,7 @@
 package com.westlife.demo.service;
 import java.text.ParseException;
 import java.util.Date;
+import java.util.List;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -66,6 +67,11 @@ public class IDCardService {
 		
 		idcard.setDescribe(describe);
 		return idcard;
+	}
+	
+	public List<IDCard> selectAll() {
+		List<IDCard> idCardsList=idCardMapper.selectAll();
+		return idCardsList;
 	}
 
 }
