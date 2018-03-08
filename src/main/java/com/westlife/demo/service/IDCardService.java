@@ -25,6 +25,7 @@ public class IDCardService {
 		if(idcard==null) {
 			return null;
 		}
+		idcard.setIDCard(requestDto.getIDCard());
 		String year=requestDto.getIDCard().substring(6, 10);//出生年
 		String month=requestDto.getIDCard().substring(10, 12);//出生月
 		String day=requestDto.getIDCard().substring(12, 14);//出生日

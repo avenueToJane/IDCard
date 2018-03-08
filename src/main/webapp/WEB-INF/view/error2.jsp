@@ -14,16 +14,7 @@
 </head>
 <body style="text-align:center;">
 <div style="width:600px;margin-left:auto;margin-right:auto;">
-<form role="form" action="/query" method="post">
-	<div class="form-group">
-		<label for="name">身份证号码</label>
-		<input type="text" class="form-control" id="name"  name="IDCard"
-			   placeholder="请输入身份证号码">
-	</div>
-	
-	<button type="submit" class="btn btn-default" onclick="login();">提交</button>
-	${error}
-</form>
+${error}
 </div>
 </body>
 </html>

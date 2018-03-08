@@ -8,7 +8,8 @@ import io.swagger.annotations.ApiModelProperty;
 public class IDCard implements Serializable{
 
 	private static final long serialVersionUID = 4716047378092754966L;
-	
+	@ApiModelProperty("省份证号码")
+	private String IDCard;
 	@ApiModelProperty("省份id")
 	private String provinceid;
 	@ApiModelProperty("省份名称")
@@ -141,6 +142,21 @@ public class IDCard implements Serializable{
 	public void setBirthCode(String birthCode) {
 		this.birthCode = birthCode;
 	}
+	public String getIDCard() {
+		return IDCard;
+	}
+	public void setIDCard(String iDCard) {
+		IDCard = iDCard;
+	}
+	@Override
+	public String toString() {
+		return "IDCard [IDCard=" + IDCard + ", provinceid=" + provinceid + ", province=" + province + ", cityid="
+				+ cityid + ", city=" + city + ", areaid=" + areaid + ", area=" + area + ", birthday=" + birthday
+				+ ", sex=" + sex + ", number=" + number + ", checkCode=" + checkCode + ", addressCode=" + addressCode
+				+ ", birthCode=" + birthCode + ", describe=" + describe + ", age=" + age + ", lifeDay=" + lifeDay
+				+ ", millisecond=" + millisecond + "]";
+	}
+	
 	
 	
 	
