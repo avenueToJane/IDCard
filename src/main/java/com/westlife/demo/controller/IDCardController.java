@@ -25,6 +25,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.westlife.demo.RuntimeData;
 import com.westlife.demo.common.AjaxResult;
 import com.westlife.demo.common.GeneralException;
 import com.westlife.demo.common.RequestDto;
@@ -72,16 +73,21 @@ public class IDCardController {
 	@RequestMapping(value = "/query")
 	public String queryIDCrad(RequestDto requestDto,Model model) throws ParseException{
 		String IDCards=requestDto.getIDCard();
-		
+		if(IDCards==null || "".equals(IDCards)) {
+			model.addAttribute("error","身份证信息不能为空");
+			return "index";
+		}
 		String reg18 = "(^[1-9]\\d{5}[1-9]\\d{3}((0\\d)|(1[0-2]))(([0|1|2]\\d)|3[0-1])\\d{3}[0-9X]$)";
 		Boolean bool=Pattern.matches(reg18, IDCards);
 		if(!bool) {//不符合
 			model.addAttribute("error","请输入正确的身份证号码格式，为18位");
+			model.addAttribute("idCard",IDCards);
 			return "index";
 		}
 		IDCard idCard = idCardService.selectByIDCard(requestDto);
 		if (idCard == null) {
 			model.addAttribute("error","请输入正确的身份证号码");
+			model.addAttribute("idCard",IDCards);
 			return "index";
 		}
 		System.out.println(idCard);
@@ -91,9 +97,10 @@ public class IDCardController {
 	@RequestMapping(value = "/queryAll")
 	public String queryAll(Model model){
 		
-		List<IDCard> idCardList = idCardService.selectAll();
-		model.addAttribute("idCardList", idCardList);
-		System.out.println(idCardList);
+		//List<IDCard> idCardList = idCardService.selectAll();//从数据库中取数据
+		List<IDCard> iDCardList=RuntimeData.getIDCardMap().get("iDCardList");//从内存中取
+		model.addAttribute("idCardList", iDCardList);
+		System.out.println(iDCardList);
 		return "list";
 		
 	}

@@ -22,33 +22,32 @@
 <script type="text/javascript"
 	src="<%=contextPath%>/static/easyui/jquery.easyui.min.js"></script>
 </head>
-<body>
+<body style="text-align:center;">
 	<h2>全国省市县信息</h2>
 
 	<div style="margin: 20px 0;"></div>
-
-	<table id="dg" title="全国各省市县信息" style="width: 580px; height: 300px"
+<div>
+	<table id="dg" title="全国各省市县信息" style="width: 100%; height: 650px"
 		data-options="
     				rownumbers:true,
     				singleSelect:true,
     				autoRowHeight:false,
     				pagination:true,
-    				pageSize:10">
+    				pageSize:30">
 		<thead>
 			<tr>
 
-				<th field="provinceid" width="80">省份编码</th>
-				<th field="province" width="100">省份名称</th>
-				<th field="cityid" width="80">城市编码</th>
-				<th field="city" width="80" align="right">城市名称</th>
-				<th field="areaid" width="80" align="right">县区编码</th>
-				<th field="area" width="100" align="right">县区名称</th>
-
-
+				<th field="provinceid" width="14%">省份编码</th>
+				<th field="province" width="14%">省份名称</th>
+				<th field="cityid" width="14%">城市编码</th>
+				<th field="city" width="14%">城市名称</th>
+				<th field="areaid" width="14%">县区编码</th>
+				<th field="area" width="14%">县区名称</th>
+				<th field="describe" width="16%">描述</th>
 			</tr>
 		</thead>
 	</table>
-
+</div>
 	<script>
 		function getData() {
 			var rows = [];
@@ -60,7 +59,8 @@
 				cityid : "${IDCard.cityid}",
 				city : "${IDCard.city}",
 				areaid : "${IDCard.areaid}",
-				area : "${IDCard.area}"
+				area : "${IDCard.area}",  
+				describe:"${IDCard.province}${IDCard.city=='市辖区' ? '':IDCard.city}${IDCard.area}"
 
 			});
 

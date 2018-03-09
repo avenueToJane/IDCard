@@ -10,21 +10,21 @@
 
 <head>
 <meta charset="utf-8">
-<title>首页</title>
+<title>欢迎访问个人身份证信息页面</title>
 <link href="<%=contextPath%>/static/css/bootstrap.min.css"
 	rel="stylesheet" type="text/css" />
 
 <script src="<%=contextPath%>/static/js/jquery.min.js"></script>
 <script src="<%=contextPath%>/static/js/bootstrap.min.js"></script>
 </head>
-<body>
+<body style="text-align: center;">
 
 <div class="container">
 	<div class="jumbotron">
-		<h1>欢迎访问身份证信息页面！</h1>
+		<h1>欢迎访问个人身份证信息页面！</h1>
 		<p> 您的身份证号码为：${idCard.IDCard}</p>
-		<p><a class="btn btn-primary btn-lg" role="button">
-			详细信息如下</a>
+		<p><a class="btn btn-primary btn-lg" role="button" href="<%=contextPath%>/queryAll">
+			全国各省市县信息查询请点此处</a>
 		</p>
 	</div>
 </div>
