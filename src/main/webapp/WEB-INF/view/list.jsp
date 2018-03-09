@@ -21,51 +21,53 @@
 	src="<%=contextPath%>/static/easyui/jquery.min.js"></script>
 <script type="text/javascript"
 	src="<%=contextPath%>/static/easyui/jquery.easyui.min.js"></script>
-</head>
-<body style="text-align:center;">
-	<h2>全国省市县信息</h2>
 
-	<div style="margin: 20px 0;"></div>
-<div>
-	<table id="dg" title="全国各省市县信息" style="width: 100%; height: 650px"
-		data-options="
+</head>
+<body style="text-align: center;">
+
+	<h2>全国省市县信息</h2>
+	<div style="margin: 20px 0;" id="p" class="easyui-progressbar"
+		style="width:400px;"></div>
+	<div>
+		<table id="dg" title="全国各省市县信息" style="width: 100%; height: 600px"
+			data-options="
     				rownumbers:true,
     				singleSelect:true,
     				autoRowHeight:false,
     				pagination:true,
-    				pageSize:30">
-		<thead>
-			<tr>
+    				pageSize:100">
+			<thead>
+				<tr>
 
-				<th field="provinceid" width="14%">省份编码</th>
-				<th field="province" width="14%">省份名称</th>
-				<th field="cityid" width="14%">城市编码</th>
-				<th field="city" width="14%">城市名称</th>
-				<th field="areaid" width="14%">县区编码</th>
-				<th field="area" width="14%">县区名称</th>
-				<th field="describe" width="16%">描述</th>
-			</tr>
-		</thead>
-	</table>
-</div>
+					<th field="provinceid" width="14%">省份编码</th>
+					<th field="province" width="14%">省份名称</th>
+					<th field="cityid" width="14%">城市编码</th>
+					<th field="city" width="14%">城市名称</th>
+					<th field="areaid" width="14%">县区编码</th>
+					<th field="area" width="14%">县区名称</th>
+					<th field="describe" width="16%">描述</th>
+				</tr>
+			</thead>
+		</table>
+	</div>
 	<script>
 		function getData() {
 			var rows = [];
 
 			<c:forEach items="${idCardList}" var="IDCard" varStatus="s">
 			rows.push({
-				provinceid : "${IDCard.provinceid}",
-				province : "${IDCard.province}",
-				cityid : "${IDCard.cityid}",
-				city : "${IDCard.city}",
-				areaid : "${IDCard.areaid}",
-				area : "${IDCard.area}",  
-				describe:"${IDCard.province}${IDCard.city=='市辖区' ? '':IDCard.city}${IDCard.area}"
+						provinceid : "${IDCard.provinceid}",
+						province : "${IDCard.province}",
+						cityid : "${IDCard.cityid}",
+						city : "${IDCard.city}",
+						areaid : "${IDCard.areaid}",
+						area : "${IDCard.area}",
+						describe : "${IDCard.province}${IDCard.city=='市辖区' ? '':IDCard.city}${IDCard.area}"
 
-			});
+					});
 
 			</c:forEach>
-
+            /* alert(rows.length) 总共数据的个数*/
 			return rows;
 		}
 
@@ -94,8 +96,17 @@
 			if (!data.originalRows) {
 				data.originalRows = (data.rows);
 			}
-			var start = (opts.pageNumber - 1) * parseInt(opts.pageSize);
-			var end = start + parseInt(opts.pageSize);
+			var start = (opts.pageNumber - 1) * parseInt(opts.pageSize);/* 开始的序号 */
+			var end = start + parseInt(opts.pageSize);/* 结束的序号 */
+			
+			var num =getData().length;/* 数据总数 */
+			var a=(end/num);  /* 保留两位小数 */
+			var b=parseFloat(a);
+			var c=b*100;
+			
+			var d=Math.round(c*100)/100;
+			
+			$('#p').progressbar('setValue',d);//进度条展示
 			data.rows = (data.originalRows.slice(start, end));
 			return data;
 		}
