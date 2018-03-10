@@ -41,7 +41,7 @@ $(function(){
 			
 			<p>
 				<a class="btn btn-primary btn-lg" role="button"
-					href="javascript:void(0)"> 全国公民身份证号码查询服务中心</a>
+					href="<%=contextPath%>/queryAll"> 全国公民身份证号码查询服务中心</a>
 			</p>
 		</div>
 	</div>
