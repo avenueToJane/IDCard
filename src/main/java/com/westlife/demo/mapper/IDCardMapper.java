@@ -9,4 +9,5 @@ public interface IDCardMapper {
 	
    IDCard selectByIDCard(String areaid);
    List<IDCard> selectAll();
+IDCard selectByAreaId(String areaId);
 }

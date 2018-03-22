@@ -1,7 +1,9 @@
 package com.westlife.demo.controller;
 
 import java.text.ParseException;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
 import javax.validation.Valid;
@@ -27,6 +29,7 @@ import com.westlife.demo.common.AjaxResult;
 import com.westlife.demo.common.GeneralException;
 import com.westlife.demo.common.RequestDto;
 import com.westlife.demo.common.RequestUser;
+import com.westlife.demo.model.Area;
 import com.westlife.demo.model.IDCard;
 import com.westlife.demo.model.Province;
 
@@ -42,10 +45,11 @@ import io.swagger.annotations.ApiParam;
 import io.swagger.annotations.ApiResponse;
 import io.swagger.annotations.ApiResponses;
 
-//@Controller
+@Controller
 @Api(value = "根据查询身份证号查询身份信息Swagger",description="简单的API")
 @RestController
 @EnableScheduling//定时任务的注解
+@RequestMapping("/superadmin")
 public class IDCardControllerSwagger
 {
 	protected static final Logger logger = LoggerFactory.getLogger(IDCardControllerSwagger.class);
@@ -81,6 +85,20 @@ public class IDCardControllerSwagger
 		redisService.setObj("idCardRedis", idCard);
 		pool.put("idCardMap", idCard);
 		return idCard;
+	}
+	@ApiOperation(value = "查询身地区信息", notes = "根据查询身份证号前六位查询地区信息")
+	@RequestMapping(value="/queryArea")
+	public Map<String, Object> queryArea(String areaId){
+		
+		System.out.println("42397432980758937489");
+		IDCard idCard=idCardService.selectByAreaId(areaId);
+		System.out.println(idCard);
+		 Map<String, Object> modelMap = new HashMap<>();
+	        
+	        modelMap.put("area", idCard.getProvince()+""+idCard.getCity()+""+idCard.getArea());
+	        
+	        return modelMap;
+		
 	}
 	/*@ApiOperation(value = "查询ConcurrentHashMap的idCard缓存", notes = "缓存obj") 
 	@RequestMapping(value="/queryMapIdCard", method = RequestMethod.POST)

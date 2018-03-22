@@ -74,4 +74,9 @@ public class IDCardService {
 		return idCardsList;
 	}
 
+	public IDCard selectByAreaId(String areaId) {
+		
+		return idCardMapper.selectByAreaId(areaId);
+	}
+
 }

@@ -18,5 +18,15 @@
 	    left join areas a on c.cityid=a.cityid
 	    
 	</select>
+	
+	
+	
+	<select id="selectByAreaId" resultType="com.westlife.demo.model.IDCard">
+	    select p.provinceid,p.province,c.cityid,c.city,a.areaid,a.area
+	    from provinces p
+	    left join cities c on p.provinceid=c.provinceid
+	    left join areas a on c.cityid=a.cityid
+	    where a.areaid=#{areaid}
+	</select>
 
 </mapper>
