@@ -74,7 +74,7 @@ public class IDCardController {
 	public String queryIDCrad(RequestDto requestDto,Model model) throws ParseException{
 		String IDCards=requestDto.getIDCard();
 		if(IDCards==null || "".equals(IDCards)) {
-			model.addAttribute("error","身份证信息不能为空");
+			model.addAttribute("error","身份证信息不能为空!!!");
 			return "index";
 		}
 		String reg18 = "(^[1-9]\\d{5}[1-9]\\d{3}((0\\d)|(1[0-2]))(([0|1|2]\\d)|3[0-1])\\d{3}[0-9X]$)";
@@ -90,7 +90,7 @@ public class IDCardController {
 			model.addAttribute("idCard",IDCards);
 			return "index";
 		}
-		System.out.println(idCard);
+		//System.out.println(idCard);
 		model.addAttribute("idCard", idCard);
 		return "info";
 	}
@@ -100,7 +100,7 @@ public class IDCardController {
 		//List<IDCard> idCardList = idCardService.selectAll();//从数据库中取数据
 		List<IDCard> iDCardList=RuntimeData.getIDCardMap().get("iDCardList");//从内存中取
 		model.addAttribute("idCardList", iDCardList);
-		System.out.println(iDCardList);
+		//System.out.println(iDCardList);
 		return "list";
 		
 	}
