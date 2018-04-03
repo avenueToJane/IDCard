@@ -46,7 +46,7 @@ $(function(){
 		</div>
 	</div>
 	<div style="width: 600px; margin-left: auto; margin-right: auto;">
-		<form role="form" action="/query" method="post">
+		<form role="form" action="<%=contextPath%>/query" method="post">
 			<div class="form-group">
 			   <h2>请输入身份证号码</h2>
 				<input type="text"
